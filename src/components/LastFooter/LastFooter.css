@@ -1,0 +1,11 @@
+.last_footer{
+    text-align: center;
+    margin: 10px auto;
+    align-items: center;
+    border-top: 1px solid #797979;
+    padding: 15px 0;
+}
+.last_footer p{
+    text-align: center;
+    margin: 0;
+}

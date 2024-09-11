@@ -1,0 +1,37 @@
+.container-store {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .online-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .icon-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(145,186,168, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .icon-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(145,186,168, 0.3);
+    background-color: rgba(145,186,168, 0.05);
+  }
+  
+  .icon-box img {
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
