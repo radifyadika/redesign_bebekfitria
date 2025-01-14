@@ -6,6 +6,9 @@ import { HiChatBubbleBottomCenter } from "react-icons/hi2";
 import { MdVideocam } from "react-icons/md";
 
 const Contanct = () => {
+  const phoneNumber = "0857-1121-0364"; // Update with the correct number
+  const whatsappNumber = "6285711210364"; // Update with the correct number (without dashes)
+
   return (
     <section className="c-wrapper">
       <div className="paddings innerWidth flexCenter c-container">
@@ -21,10 +24,12 @@ const Contanct = () => {
                 </div>
                 <div className="flexColStart detail">
                   <span className="primaryText">Call</span>
-                  <span className="secondaryText">0813 3205 5498</span>
+                  <span className="secondaryText">{phoneNumber}</span>
                 </div>
               </div>
-              <div className="flexCenter button">Call Now</div>
+              <a href={`tel:${phoneNumber}`} className="flexCenter button">
+                Call Now
+              </a>
             </div>
 
             {/* second mode */}
@@ -35,14 +40,19 @@ const Contanct = () => {
                 </div>
                 <div className="flexColStart detail">
                   <span className="primaryText">Chat</span>
-                  <span className="secondaryText">0813 3205 5498</span>
+                  <span className="secondaryText">{phoneNumber}</span>
                 </div>
               </div>
-              <div className="flexCenter button">Chat Now</div>
+              <a
+                href={`https://wa.me/${whatsappNumber}?text=Halo%20Bebek%20Fitria..%0APerkenalkan%20saya%2C%20%0A%0ANama%20%3A%20%0ADomilisi%20%2F%20Wilayah%20%3A%20%0A%0AMau%20bertanya%20dong%20min%20%3F`}
+                className="flexCenter button"
+              >
+                Chat Now
+              </a>
             </div>
           </div>
 
-          {/* second row* */}
+          {/* second row */}
           <div className="flexStart row">
             <div className="flexColCenter mode">
               <div className="flexStart">
@@ -51,10 +61,12 @@ const Contanct = () => {
                 </div>
                 <div className="flexColStart detail">
                   <span className="primaryText">Video Call</span>
-                  <span className="secondaryText">0813 3205 5498</span>
+                  <span className="secondaryText">{phoneNumber}</span>
                 </div>
               </div>
-              <div className="flexCenter button">Video Call Now</div>
+              <a href={`tel:${phoneNumber}`} className="flexCenter button">
+                Video Call Now
+              </a>
             </div>
 
             {/* fourth row */}
@@ -65,10 +77,12 @@ const Contanct = () => {
                 </div>
                 <div className="flexColStart detail">
                   <span className="primaryText">Message</span>
-                  <span className="secondaryText">0813 3205 5498</span>
+                  <span className="secondaryText">{phoneNumber}</span>
                 </div>
               </div>
-              <div className="flexCenter button">Message Now</div>
+              <a href={`sms:${phoneNumber}`} className="flexCenter button">
+                Message Now
+              </a>
             </div>
           </div>
         </div>

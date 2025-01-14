@@ -48,6 +48,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link to="faq-container" smooth={true} offset={-260} duration={500}>
+            FAQ
+          </Link>
+        </li>
+        <li>
           <Link
             to="c-wrapper"
             smooth={true}

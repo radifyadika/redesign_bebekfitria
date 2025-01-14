@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
+import ReactPlayer from "react-player";
 import "./VideoPlayer.css";
-import video from "../../assets/video.mp4";
 
 const VideoPlayer = ({ playState, setPlayState }) => {
   const player = useRef(null);
@@ -17,7 +17,13 @@ const VideoPlayer = ({ playState, setPlayState }) => {
       ref={player}
       onClick={closePlayer}
     >
-      <video src={video} autoPlay muted controls></video>
+      <ReactPlayer
+        url="https://www.youtube.com/watch?v=igcQXfu15-0" // Replace with actual video URL
+        playing={playState} // Plays the video when playState is true
+        controls={true} // Enables controls
+        width="75%" // Make the player responsive
+        height="75%"
+      />
     </div>
   );
 };

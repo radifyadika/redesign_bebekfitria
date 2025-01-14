@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Distributor from "./components/Distributor/Distributor";
 import OnlineStore from "./components/OnlineStore/OnlineStore";
 import Contact from "./components/Contact/Contact";
+import FAQ from "./components/FAQ/faq";
 import Footer from "./components/Footer/Footer";
 import LastFooter from "./components/LastFooter/LastFooter";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
@@ -32,6 +33,8 @@ const App = () => {
           title="Produk Kami Tersedia Di Platform Toko Online"
         />
         <OnlineStore />
+        <Title subTitle="F.A.Q" title="Pertanyaan Yang Sering Diajukan" />
+        <FAQ />
         <Title
           subTitle="Kontak  Kami"
           title="Sangat mudah untuk menghubungi kami"

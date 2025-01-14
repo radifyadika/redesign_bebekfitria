@@ -38,7 +38,7 @@ nav ul li{
 .menu-icon{
     display: none;
 }
-@media (max-width: 840px){
+@media (max-width: 800px){
     nav{
         padding: 15px 0;
     }

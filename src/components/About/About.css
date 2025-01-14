@@ -41,6 +41,39 @@
     margin-bottom: 15px;
 }
 
+.video {
+
+    position: relative;
+  
+    img {
+      position: relative;
+      z-index: 1;
+    }
+  
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: 0;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      filter: brightness(0.7);
+      cursor: pointer;
+    }
+  
+    &:hover {
+  
+      video {
+        z-index: 2;
+        opacity: 1;
+        cursor: pointer;
+      }
+  
+    }
+  
+  }
 /* -------media query------------ */
 @media (max-width: 800px){
     .about{
@@ -55,7 +88,7 @@
         flex-basis: 100%;
     }
     .about_img{
-        width: 450px;
+        width: 320px;
         border-radius: 10px;
     }
 }

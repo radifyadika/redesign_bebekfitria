@@ -16,7 +16,7 @@
 }
 .next-btn:hover, .back-btn:hover{
     cursor: pointer;
-    background: #301A00;
+    background: #347558;
 }
 .back-btn{
     right: auto;
@@ -30,7 +30,7 @@
     width: 200%;
     overflow-x: hidden;
     transition: 0.5s;
-    transform: translateX(-50%);
+    transform: translateX(-0%);
 }
 .slider ul li{
     list-style: none;
@@ -96,4 +96,9 @@
     .slide img{
         width: 230px;
     }
+    .slider ul{
+        overflow-x: visible;
+    }
+
+
 }

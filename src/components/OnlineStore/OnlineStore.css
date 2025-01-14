@@ -35,3 +35,27 @@
     height: 80%;
     object-fit: contain;
   }
+
+/* -------media query------------ */
+
+  @media (max-width: 800px) {
+  .container-store {
+    flex-direction: column;
+    gap: 20px; /* Reduce gap between elements */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .icon-box {
+    width: 150px; /* Reduce icon size */
+    height: 150px; /* Reduce icon size */
+  }
+
+  .icon-box img {
+    width: 70%; /* Adjust image size inside the icon */
+    height: 70%;
+  }
+
+  .online-store {
+    padding: 10px; /* Reduce padding */
+  }
+}

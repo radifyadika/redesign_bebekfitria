@@ -16,7 +16,7 @@ const Footer = () => {
         </p>
         <div className="social-icons">
           <SocialIcon
-            url="https://instagram.com/radifyadika"
+            url="https://instagram.com"
             bgColor="#A7D6C2"
             style={{ height: 35, width: 35 }}
           />
@@ -41,11 +41,14 @@ const Footer = () => {
           </li>
           <li>
             <img src={phone_icon} alt="" />
-            +62 8135545512
+            +62 857-1121-0364
           </li>
           <li>
             <img src={location_icon} alt="" />
-            Desa Waluya <br />
+            Dusun Semplek RT/RW 021/005
+            <br />
+            Desa Sampalan
+            <br />
             Kutawaluya, Karawang
           </li>
         </ul>
